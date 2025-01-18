@@ -159,7 +159,7 @@ def plot_graph(covariances, threshold=0.1):
         nx.draw_networkx_edge_labels(
             G, pos, edge_labels={(u, v): f"{d['weight']:.2f}" for u, v, d in edges}, ax=ax
         )
-        ax.set_title(f"Graph of Covariance (Period {t + 1})")
+        ax.set_title(f"Graph of (Period {t + 1})")
     
     # Turn off unused axes
     for i in range(T, len(axes)):
